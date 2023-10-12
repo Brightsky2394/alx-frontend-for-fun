@@ -8,7 +8,7 @@ import sys
 from os import path
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 3:
         message = "Usage: ./markdown2html.py README.md README.html"
         sys.stderr.write("{}\n".format(message))
         sys.exit(1)
