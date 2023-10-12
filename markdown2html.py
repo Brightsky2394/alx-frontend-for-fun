@@ -28,7 +28,7 @@ if __name__ == '__main__':
             if line.startswith('#'):
                 count = line.count('#')
                 content = line.strip('# ').strip()
-                html_header = "<h{}>{}</h{}>".format(count, content, count)
+                html_header = f"<h{count}>{content}</h{count}>\n"
                 html_file.write(html_header)
             else:
                 html_file.write(line)
